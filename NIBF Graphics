@@ -1,0 +1,98 @@
+<!-- ===================== NIBF HERO (MTP-branded + spinning logo, robust) ===================== -->
+
+<section id="nibf-hero" class="nibf-wrap nibf-mtp" style="border-radius: 16px; background: radial-gradient(120% 120% at 0% 0%, #0E0E0E 0%, #3a0b0b 40%, #0E0E0E 100%); color: #fff; margin: 0 0 32px 0; padding: 56px 20px; box-shadow: 0 10px 30px rgba(0,0,0,.25); position: relative; overflow: hidden;" aria-label="Nairobi International Book Fair"><style>
+    /* Brand tokens */<br />
+    #nibf-hero.nibf-mtp{<br />
+      --mtp-red:#D7232B; --mtp-black:#0E0E0E; --mtp-white:#FFFFFF; --mtp-gold:#F4C542;<br />
+    }</p>
+<p>    .nibf-inner{max-width:1200px;margin:0 auto;display:grid;gap:20px;align-items:center;<br />
+      grid-template-columns:1.2fr .8fr}<br />
+    @media(max-width:900px){.nibf-inner{grid-template-columns:1fr}}</p>
+<p>    .nibf-kicker{letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:var(--mtp-gold);opacity:.95}<br />
+    .nibf-title{font-size:clamp(1.8rem, 3.5vw, 3rem);line-height:1.1;margin:.25em 0 .3em}<br />
+    .nibf-sub{font-size:clamp(1rem, 1.6vw, 1.15rem);opacity:.95;margin-bottom:18px}</p>
+<p>    .nibf-badges{display:flex;gap:10px;flex-wrap:wrap;margin:.75rem 0 1.25rem}<br />
+    .nibf-badge{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);<br />
+      padding:6px 10px;border-radius:999px;font-size:.85rem}</p>
+<p>    .nibf-cta{display:flex;gap:12px;flex-wrap:wrap}<br />
+    .nibf-cta a{display:inline-block;padding:12px 16px;border-radius:999px;text-decoration:none;<br />
+      font-weight:700;border:2px solid var(--mtp-red);color:var(--mtp-black);background:var(--mtp-red)}<br />
+    .nibf-cta a.nibf-ghost{background:transparent;color:#fff;border-color:#fff}</p>
+<p>    .nibf-right{position:relative;min-height:260px}<br />
+    .nibf-img{width:100%;height:auto;border-radius:14px;border:2px solid rgba(255,255,255,.18);<br />
+      box-shadow:0 12px 30px rgba(0,0,0,.35);transform:perspective(900px) rotateY(-6deg)}</p>
+<p>    /* floating accents (optional) */<br />
+    .nibf-float{position:absolute;inset:0;pointer-events:none}<br />
+    .nibf-blob{position:absolute;width:58px;height:38px;border-radius:8px;opacity:.22;<br />
+      background:linear-gradient(145deg,#F4C542,#FFD56E);filter:blur(.2px);animation:floatY 7.5s ease-in-out infinite}<br />
+    .nibf-blob.b2{left:12%;top:62%;animation-duration:9.5s;background:linear-gradient(145deg,#ffd76a,#ff6a6a)}<br />
+    .nibf-blob.b3{left:82%;top:18%;animation-duration:8.5s;background:linear-gradient(145deg,#9bffb1,#60ffa8)}<br />
+    @keyframes floatY{0%{transform:translateY(0)}50%{transform:translateY(-18px)}100%{transform:translateY(0)}}</p>
+<p>    /* countdown */<br />
+    .nibf-count{display:flex;gap:16px;align-items:center;margin:.5rem 0 1.25rem}<br />
+    .nibf-chip{min-width:72px;text-align:center;border-radius:12px;padding:14px 10px;<br />
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));<br />
+      border:1px solid rgba(255,255,255,.25)}<br />
+    .nibf-chip b{display:block;font-size:1.1rem}</p>
+<p>    /* Spinning logo — uses <img> for reliability */<br />
+    .nibf-medal{<br />
+      position:absolute; right:18px; top:18px; width:92px; aspect-ratio:1/1; border-radius:50%;<br />
+      background:<br />
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,.25), rgba(255,255,255,0) 45%),<br />
+        conic-gradient(from 0deg, var(--mtp-gold), #fff4c7 40%, var(--mtp-gold) 100%);<br />
+      box-shadow:0 6px 16px rgba(0,0,0,.35), inset 0 2px 8px rgba(0,0,0,.25);<br />
+      display:grid; place-items:center; transform:perspective(700px) rotateX(10deg) rotateY(-10deg); z-index:3;<br />
+    }<br />
+    .nibf-medal img{width:76%; height:auto; border-radius:50%; background:#fff; border:3px solid var(--mtp-red);<br />
+      box-shadow:inset 0 0 0 2px #fff; animation:spin 12s linear infinite}<br />
+    @keyframes spin{to{transform:rotate(360deg)}}<br />
+    @media(prefers-reduced-motion:reduce){ .nibf-blob, .nibf-medal img{animation:none} }<br />
+  </style><!-- Spinning logo badge -->
+<div class="nibf-medal" title="Mountain Top Educational Publishers"><img src="Small-MTP-logo-01.png" alt="MTP Logo" /></div>
+<!-- decorative blobs -->
+<div class="nibf-float" aria-hidden="true">
+
+</div>
+<div class="nibf-inner">
+<div class="nibf-left">
+<div class="nibf-kicker">Nairobi International Book Fair • Promo</div>
+<h1 class="nibf-title"><img class="alignnone size-medium wp-image-11255" src="https://www.mountainpublishers.com/wp-content/uploads/2025/09/Small-MTP-logo-01-300x300.png" alt="" width="300" height="300" /></h1>
+<h1 class="nibf-title">INSPIRING LEADERS SHAPPING FUTURES</h1>
+<p class="nibf-sub">Join Mountain Top Educational Publishers at the Nairobi International Book Fair.
+Discover CBC-aligned bestsellers, meet our team, and explore new releases.</p>
+
+<div id="nibf-countdown" class="nibf-count" data-target="2025-09-25T09:00:00">
+<div class="nibf-chip"><b id="nibf-dd">--</b><small>Days</small></div>
+<div class="nibf-chip"><b id="nibf-hh">--</b><small>Hours</small></div>
+<div class="nibf-chip"><b id="nibf-mm">--</b><small>Mins</small></div>
+<div class="nibf-chip"><b id="nibf-ss">--</b><small>Secs</small></div>
+</div>
+<div class="nibf-badges"><span class="nibf-badge">CBC Flagship Titles</span>
+<span class="nibf-badge">East Africa Reach</span>
+<span class="nibf-badge">Print &amp; Digital</span></div>
+<div class="nibf-cta"><a href="#mtp-bookstore">Browse Bestsellers</a>
+<a class="nibf-ghost" href="#mtp-about">About MTP</a></div>
+<div class="nibf-note">Tip: Scroll to see more ↓</div>
+</div>
+<div class="nibf-right" aria-hidden="true"><img class="nibf-img" src="https://www.mountainpublishers.com/wp-content/uploads/2025/04/DSC_0060-1-scaled-2.jpg" alt="Nairobi International Book Fair, Mountain Top Educational Publishers booth" /></div>
+</div>
+<script>
+    (function(){
+      var el = document.getElementById('nibf-countdown'); if(!el) return;
+      var t = el.getAttribute('data-target'); if(!t) return;
+      var target = new Date(t).getTime();
+      function pad(n){return n<10?'0'+n:n;}
+      function tick(){
+        var now=Date.now(), diff=Math.max(0,target-now);
+        var d=Math.floor(diff/86400000),
+            h=Math.floor((diff%86400000)/3600000),
+            m=Math.floor((diff%3600000)/60000),
+            s=Math.floor((diff%60000)/1000);
+        function set(id,val){var x=document.getElementById(id); if(x) x.textContent=pad(val);}
+        set('nibf-dd',d); set('nibf-hh',h); set('nibf-mm',m); set('nibf-ss',s);
+      }
+      tick(); setInterval(tick,1000);
+    })();
+  </script>
+
+</section><!-- =================== /NIBF HERO =================== -->
