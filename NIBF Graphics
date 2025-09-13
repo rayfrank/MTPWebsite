@@ -1,123 +1,47 @@
-<!-- ===================== NIBF HERO (big logo spins + iframe countdown) ===================== -->
-<section id="nibf-hero" class="nibf-wrap nibf-mtp"
-  style="border-radius:16px;background:radial-gradient(120% 120% at 0% 0%, #0E0E0E 0%, #3a0b0b 40%, #0E0E0E 100%);
-         color:#fff;margin:0 0 32px 0;padding:56px 20px;box-shadow:0 10px 30px rgba(0,0,0,.25);position:relative;overflow:hidden;"
-  aria-label="Nairobi International Book Fair">
+<!-- ===================== NIBF HERO (big logo spins + iframe countdown + looping video) ===================== -->
 
-  <div class="nibf-inner" style="max-width:1150px;margin:0 auto;display:grid;gap:20px;grid-template-columns:1.2fr .8fr;align-items:center;">
-    <div class="nibf-left" style="position:relative;z-index:2;">
-      <h1 class="nibf-kicker" style="margin:0 0 8px 0;font-weight:700;letter-spacing:.04em;color:#fff;">Nairobi International Book Fair</h1>
+<section id="nibf-hero" class="nibf-wrap nibf-mtp" style="border-radius: 16px; background: radial-gradient(120% 120% at 0% 0%, #0E0E0E 0%, #3a0b0b 40%, #0E0E0E 100%); color: #fff; margin: 0 0 32px 0; padding: 56px 20px; box-shadow: 0 10px 30px rgba(0,0,0,.25); position: relative; overflow: hidden;" aria-label="Nairobi International Book Fair">
+<div class="nibf-inner" style="max-width: 1150px; margin: 0 auto; display: grid; gap: 20px; grid-template-columns: 1.2fr .8fr; align-items: center;">
+<div class="nibf-left" style="position: relative; z-index: 2;">
+<h1 class="nibf-kicker" style="margin: 0 0 8px 0; font-weight: bold; letter-spacing: .04em; color: #fff;">Nairobi International Book Fair</h1>
+<!-- BIG LOGO (spins) -->
+<h1 class="nibf-title" style="margin: .25rem 0; color: #fff;"><img style="display: block; margin: 0; border-radius: 50%; padding: 8px; background: rgba(255,255,255,.06); box-shadow: 0 8px 22px rgba(0,0,0,.35), inset 0 0 0 6px rgba(193,18,31,.15); animation: nibfSpin 10s linear infinite !important; will-change: transform;" src="https://www.mountainpublishers.com/wp-content/uploads/2025/09/Small-MTP-logo-01-300x300.png" alt="Mountain Top Educational Publishers" width="300" height="300" /></h1>
+<style>
+        @keyframes nibfSpin { to { transform: rotate(360deg); } }<br />        @media (prefers-reduced-motion: reduce){<br />          #nibf-hero img[style*="animation:nibfSpin"]{ animation: none !important; }<br />        }<br />        #nibf-hero h1,#nibf-hero h2,#nibf-hero h3,#nibf-hero h4{color:#fff!important}<br />      </style>
+<h1 class="nibf-title" style="margin: .25rem 0; color: #fff;">INSPIRING LEADERS SHAPPING FUTURES</h1>
+<!-- 🔴 NEW: Looping MP4 right under the headline -->
+<div class="nibf-vidwrap" style="margin: 12px 0 16px; border-radius: 14px; overflow: hidden; background: rgba(255,255,255,.04); box-shadow: 0 10px 24px rgba(0,0,0,.25);">
 
-      <!-- BIG LOGO (spins) -->
-      <h1 class="nibf-title" style="margin:.25rem 0;color:#fff;">
-        <img
-          src="https://www.mountainpublishers.com/wp-content/uploads/2025/09/Small-MTP-logo-01-300x300.png"
-          alt="Mountain Top Educational Publishers"
-          width="300" height="300"
-          style="display:block;margin:0;border-radius:50%;padding:8px;background:rgba(255,255,255,.06);
-                 box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 6px rgba(193,18,31,.15);
-                 animation:nibfSpin 10s linear infinite !important;will-change:transform;">
-      </h1>
+<video id="nibf-promo" style="display: block; width: 100%; height: auto; object-fit: cover; aspect-ratio: 16/9;" poster="https://www.mountainpublishers.com/wp-content/uploads/2025/04/DSC_0060-1-scaled-2.jpg" autoplay="autoplay" loop="loop" muted="" width="300" height="150"><!-- ⬇️ Replace with your actual WP Media URL after you upload the MP4 -->
+<source src="https://www.mountainpublishers.com/wp-content/uploads/2025/09/bookfair2025-gif-2.mp4" type="video/mp4" /><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span>
+Your browser does not support the video tag.
+</video>
 
-      <style>
-        @keyframes nibfSpin { to { transform: rotate(360deg); } }
-        @media (prefers-reduced-motion: reduce){
-          #nibf-hero img[style*="animation:nibfSpin"]{ animation: none !important; }
-        }
-        #nibf-hero h1,#nibf-hero h2,#nibf-hero h3,#nibf-hero h4{color:#fff!important}
-      </style>
+</div>
+<p class="nibf-sub" style="max-width: 62ch; opacity: .95;">Join Mountain Top Educational Publishers at the Nairobi International Book Fair.
+Discover CBC-aligned bestsellers, meet our team, and explore new releases.</p>
+<!-- Countdown lives in an iframe so page JS blockers can't affect it -->
+<div class="nibf-note" style="opacity: .8; margin-top: 8px;">Tip: Scroll to see more ↓</div>
+</div>
+<div aria-hidden="true"></div>
+<div class="nibf-right" style="position: relative; z-index: 1;" aria-hidden="true"><img class="nibf-img" style="width: 100%; height: auto; border-radius: 14px; object-fit: cover; box-shadow: 0 12px 30px rgba(0,0,0,.35); filter: brightness(.8);" src="https://www.mountainpublishers.com/wp-content/uploads/2025/04/DSC_0060-1-scaled-2.jpg" alt="Nairobi International Book Fair, Mountain Top Educational Publishers booth" /></div>
+</div>
+<style>
+    @media (max-width:900px){<br />      #nibf-hero .nibf-inner{grid-template-columns:1fr}<br />    }<br />  </style><!-- Optional: pause video when scrolled out of view (saves CPU/mobile battery) -->
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var v = document.getElementById('nibf-promo');
+      if(!v) return;
+      try{
+        var io = new IntersectionObserver(function(entries){
+          entries.forEach(function(e){
+            if(e.isIntersecting){ v.play().catch(function(){}); }
+            else { v.pause(); }
+          });
+        }, {threshold:0.25});
+        io.observe(v);
+      }catch(e){ /* older browsers silently ignore */ }
+    });
+  </script>
 
-      <h1 class="nibf-title" style="margin:.25rem 0;color:#fff;">INSPIRING LEADERS SHAPPING FUTURES</h1>
-
-      <p class="nibf-sub" style="max-width:62ch;opacity:.95;">
-        Join Mountain Top Educational Publishers at the Nairobi International Book Fair.
-        Discover CBC-aligned bestsellers, meet our team, and explore new releases.
-      </p>
-
-      <!-- Countdown lives in an iframe so page JS blockers can't affect it -->
-      <div style="margin:14px 0;">
-        <iframe title="NIBF Countdown"
-          style="width:100%;height:180px;border:0;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));"
-          srcdoc="<!DOCTYPE html><html><head><meta charset='utf-8'>
-          <style>
-            :root{ --fg:#fff; --glass:rgba(255,255,255,.08); --line:rgba(255,255,255,.16); }
-            html,body{margin:0;padding:0;background:transparent;color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif}
-            .wrap{padding:14px}
-            .row{display:flex;gap:10px;flex-wrap:wrap}
-            .kpi{flex:1 1 120px;min-width:120px;background:var(--glass);border:1px solid var(--line);
-                 border-radius:14px;padding:12px;text-align:center}
-            .kpi b{display:block;font-size:28px;font-weight:800}
-            .kpi small{opacity:.8;font-size:12px;letter-spacing:.06em}
-            .err{margin-top:8px;color:#ffd7d7}
-          </style></head><body>
-            <div class='wrap'>
-              <div class='row'>
-                <div class='kpi'><b id='d'>--</b><small>Days</small></div>
-                <div class='kpi'><b id='h'>--</b><small>Hours</small></div>
-                <div class='kpi'><b id='m'>--</b><small>Mins</small></div>
-                <div class='kpi'><b id='s'>--</b><small>Secs</small></div>
-              </div>
-              <div id='err' class='err' style='display:none'></div>
-            </div>
-            <script>
-              (function(){
-                try{
-                  // Target: 25 Sep 2025, 09:00 EAT (UTC+3)
-                  var Y=2025,M=9,D=25,H=9,MIN=0,S=0;
-                  var targetUTC = Date.UTC(Y, M-1, D, H-3, MIN, S); // convert EAT->UTC
-                  if(isNaN(targetUTC)) throw new Error('Invalid date');
-
-                  var d=document.getElementById('d'),
-                      h=document.getElementById('h'),
-                      m=document.getElementById('m'),
-                      s=document.getElementById('s');
-
-                  function pad(n){return (n<10?'0':'')+n;}
-                  function tick(){
-                    var diff=Math.max(0, targetUTC - Date.now());
-                    var dd=Math.floor(diff/86400000);
-                    var hh=Math.floor((diff%86400000)/3600000);
-                    var mm=Math.floor((diff%3600000)/60000);
-                    var ss=Math.floor((diff%60000)/1000);
-                    d.textContent=pad(dd); h.textContent=pad(hh); m.textContent=pad(mm); s.textContent=pad(ss);
-                  }
-                  tick(); setInterval(tick,1000);
-                }catch(e){
-                  var er=document.getElementById('err'); er.style.display='block';
-                  er.textContent='Countdown error: '+(e.message||e);
-                }
-              })();
-            </script>
-          </body></html>">
-        </iframe>
-      </div>
-
-      <div class="nibf-badges" style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px;">
-        <span class="nibf-badge" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:8px 10px;border-radius:999px;font-size:13px;">CBC Flagship Titles</span>
-        <span class="nibf-badge" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:8px 10px;border-radius:999px;font-size:13px;">East Africa Reach</span>
-        <span class="nibf-badge" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:8px 10px;border-radius:999px;font-size:13px;">Print &amp; Digital</span>
-      </div>
-
-      <div class="nibf-cta" style="display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 0;">
-        <a href="#mtp-bookstore" style="background:#c1121f;color:#fff;text-decoration:none;border:0;padding:10px 14px;border-radius:12px;font-weight:700;display:inline-flex">Browse Bestsellers</a>
-        <a class="nibf-ghost" href="#mtp-about" style="background:transparent;border:1px solid rgba(255,255,255,.22);color:#fff;text-decoration:none;padding:10px 14px;border-radius:12px;font-weight:700;display:inline-flex">About MTP</a>
-      </div>
-
-      <div class="nibf-note" style="opacity:.8;margin-top:8px;">Tip: Scroll to see more ↓</div>
-    </div>
-
-    <div class="nibf-right" aria-hidden="true" style="position:relative;z-index:1;">
-      <img class="nibf-img"
-           src="https://www.mountainpublishers.com/wp-content/uploads/2025/04/DSC_0060-1-scaled-2.jpg"
-           alt="Nairobi International Book Fair, Mountain Top Educational Publishers booth"
-           style="width:100%;height:auto;border-radius:14px;object-fit:cover;box-shadow:0 12px 30px rgba(0,0,0,.35);filter:brightness(.8)">
-    </div>
-  </div>
-
-  <style>
-    @media (max-width:900px){
-      #nibf-hero .nibf-inner{grid-template-columns:1fr}
-    }
-  </style>
-</section>
-<!-- =================== /NIBF HERO =================== -->
+</section><!-- =================== /NIBF HERO =================== -->
